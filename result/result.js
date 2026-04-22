@@ -22,7 +22,7 @@ for (let n = 0; n <= 25; n++) {
 
   const tdPlain = document.createElement("td");
   tdPlain.className = "plain col-plain";
-  tdPlain.textContent = shiftString(text, n);
+  tdPlain.textContent = shiftString(text, -n);
 
   const tdBtn = document.createElement("td");
   tdBtn.className = "col-copy";
@@ -41,7 +41,7 @@ tbody.addEventListener("click", async (e) => {
   if (!btn) return;
   const n = Number(btn.dataset.shift);
   try {
-    await navigator.clipboard.writeText(shiftString(text, n));
+    await navigator.clipboard.writeText(shiftString(text, -n));
     const original = btn.textContent;
     btn.textContent = "Copied ✓";
     btn.disabled = true;

@@ -49,3 +49,9 @@ test("shiftString: preserves non-ASCII", () => {
 test("shiftString: empty string returns empty string", () => {
   assert.equal(shiftString("", 5), "");
 });
+
+test("shiftString: negative shift reverses encryption (decode path)", () => {
+  // 'khoor zruog' is 'hello world' encrypted with Caesar +3;
+  // decoding it with shift -3 must recover the plaintext.
+  assert.equal(shiftString("khoor zruog", -3), "hello world");
+});

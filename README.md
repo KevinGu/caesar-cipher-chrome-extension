@@ -29,7 +29,7 @@ This extension is deliberately single-purpose. For Vigenère, Atbash, Autokey, R
 
 The algorithm is a standard Caesar shift applied only to ASCII A–Z / a–z characters; everything else (spaces, punctuation, digits, CJK, emoji) passes through untouched.
 
-For each candidate shift `n ∈ [0, 25]`, every letter's character code is advanced `n` positions modulo 26, preserving case. The result page shows all 26 rows at once so you can eyeball the plaintext — for short ciphertexts that's the fastest solution. Implementation is ~20 lines in `lib/caesar.js`.
+For each candidate shift `n ∈ [0, 25]`, the ciphertext is reversed by `n` positions modulo 26 — i.e., the "Shift n" row shows what the plaintext would be if the ciphertext had been encrypted with Caesar +n. So ciphertext encrypted with a +3 shift is decoded on the "Shift 3" row. The result page shows all 26 rows at once so you can eyeball the plaintext — for short ciphertexts that's the fastest solution. Implementation is ~20 lines in `lib/caesar.js`.
 
 ## Build icons from SVG
 
