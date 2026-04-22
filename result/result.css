@@ -84,7 +84,7 @@ body {
   font-family: ui-monospace, "SF Mono", Menlo, monospace;
   font-size: 13px;
   white-space: pre-wrap;
-  word-break: break-all;
+  overflow-wrap: anywhere;
   max-height: 120px;
   overflow-y: auto;
 }
