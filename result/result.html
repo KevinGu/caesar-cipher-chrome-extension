@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caesar Cipher Decoder — Results</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="brand">
+      <img src="../icons/icon-48.png" alt="" width="32" height="32">
+      <h1>Caesar Cipher Decoder</h1>
+    </div>
+    <a class="cta"
+       href="https://caesarcipher.org/ciphers/caesar?utm_source=chrome-ext&utm_medium=cta&utm_campaign=decode-result"
+       target="_blank" rel="noopener">
+      <span class="cta-main">Try the full toolkit →</span>
+      <span class="cta-sub">Vigenère, Atbash &amp; more</span>
+    </a>
+  </header>
+
+  <section class="input-block">
+    <div class="input-label">
+      Input (<span id="input-len">0</span> chars)
+    </div>
+    <pre id="input-text" aria-label="Selected ciphertext"></pre>
+    <div id="truncated-note" class="note-warning" hidden>
+      ⚠ Input truncated to 2000 characters for performance.
+    </div>
+  </section>
+
+  <table id="results" aria-label="Caesar shift candidates">
+    <thead>
+      <tr>
+        <th scope="col" class="col-shift">Shift</th>
+        <th scope="col" class="col-plain">Candidate plaintext</th>
+        <th scope="col" class="col-copy"><span class="sr-only">Copy</span></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <footer class="page-footer">
+    Powered by
+    <a href="https://caesarcipher.org/?utm_source=chrome-ext&utm_medium=footer"
+       target="_blank" rel="noopener">caesarcipher.org</a>
+    ·
+    <a href="https://github.com/KevinGu/caesar-cipher-chrome-extension"
+       target="_blank" rel="noopener">Source on GitHub</a>
+    · 100% offline — no data leaves your browser
+  </footer>
+
+  <script type="module" src="result.js"></script>
+</body>
+</html>
