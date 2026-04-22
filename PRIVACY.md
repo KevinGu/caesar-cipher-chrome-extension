@@ -22,6 +22,18 @@ When you right-click selected text and choose "Decode as Caesar Cipher", the sel
 
 The extension requests only one Chrome permission: `contextMenus`. This is required to add the "Decode as Caesar Cipher" entry to the right-click menu. It does not grant access to page contents or browsing history.
 
+## Compliance statement (Chrome Web Store questionnaire)
+
+- **Personally identifiable information (PII):** not collected.
+- **User activity (clicks, browsing history, interaction data):** not collected or tracked.
+- **Cross-site data transfer:** none — no data ever leaves the user's device.
+- **Use for advertising purposes:** this extension does not serve ads and is not used for any ad-related purpose.
+- **Use for credit, employment, insurance, or housing eligibility:** this extension is not used for any of these purposes.
+
+## Data retention
+
+Because no data is collected, transmitted, or stored, there is no data retention.
+
 ## Outbound links
 
 The results page contains links back to `caesarcipher.org` (the companion website) and to this extension's GitHub repository. Clicking these links opens them in a new tab; standard web-tracking rules of those destinations apply, independently of this extension.
