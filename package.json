@@ -1,0 +1,11 @@
+{
+  "name": "caesar-cipher-chrome-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: right-click any selected text to see all 25 Caesar cipher shifts. Companion to caesarcipher.org.",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "license": "MIT"
+}
